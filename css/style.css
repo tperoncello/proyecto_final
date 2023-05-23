@@ -988,24 +988,26 @@ padding: 0 4%;
 
   .galeria-galeria {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 } 
 .galeria-galeria div {
-   display: flex;
+  width: 100%; 
+  display: flex;
+   justify-content: center;
 }
 
 .galeria-galeria div img {
-    width: 200px;
+    width: 15%;
     height: 400px;
     object-fit: cover;
     opacity: .8;
-    transition: .5s ease-in;
+    transition: .3s ease-in;
     z-index: 1;
 }
 
 .galeria-galeria div img:hover {
     cursor: crosshair;
-    width: 300px;
+    width: 20%;
     opacity: 1;
     filter: contrast (120%) ;
     }
