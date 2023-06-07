@@ -176,7 +176,8 @@
 // final de index
 
 // nosotros
-@media (max-width: 766px) {
+
+@media (max-width: 810px) {
     .mapa-iframe h2 {
     font-size: 37px; 
   }
@@ -224,7 +225,7 @@
     flex-direction: column;
   }
   .producto-divimg-imagen{
-    width: 80%;
+    width: 60%;
     height: auto;
   }
   .producto-divtext-imagen-titulo{
@@ -317,7 +318,19 @@
     .menu-item-price {
       font-size: 16px;
     }
+
+    .menu-lista h1{
+    
+        font-size: 45px;
+      
+    }
   }
+
+@media(max-width:400px) {
+    .menu-lista h1{
+      font-size: 42px;
+  }
+}
 
   
 // final de menu
@@ -344,6 +357,12 @@
       font-size: 12px;
     }
   }
+
+  @media (max-width: 837px) {
+    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+      transform: translateY(20%);
+    }
+  }
   
   @media (max-width: 768px) {
     .grid-unico {
@@ -366,11 +385,11 @@
     }
   
     .galeria-galeria {
-      height: 200px;
+      height: 350px;
     }
   
     .galeria-galeria div img {
-      height: 200px;
+      height: 350px;
     }
   
     [class^=tarjetamovil]:not(.tarjetamovil) {
@@ -393,7 +412,36 @@
       font-size: 17px;
     }
   }
-  
+  @media (max-width: 766px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil){
+      height: 500px;
+    }
+
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) img {
+      height: 100%;
+    }
+
+  }
+  @media (max-width: 535px) {
+  .galeria-galeria {
+    height: 300px;
+  }
+
+  .galeria-galeria div img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .galeria-galeria {
+    height: 200px;
+  }
+
+  .galeria-galeria div img {
+    height: 200px;
+  }
+}
+
   @media (max-width: 350px) {
     .tarjetamovil-contenido h2 {
       font-size: 25px;
@@ -407,6 +455,8 @@
         transform: translateY(35%);
       }
   }
+
+
   
   @media (max-width: 310px) {
     .tarjetamovil-contenido h2 {
@@ -420,5 +470,6 @@
     [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
       transform: translateY(20%);
     }
+
   }
           // final de galeria

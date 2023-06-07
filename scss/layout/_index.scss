@@ -13,9 +13,7 @@
 }
 
 .index-section-foto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-centrado;
   flex-direction: column;
   
   h1 {
@@ -35,12 +33,10 @@
 }
 
 .index-section-contenido {
-  display: flex;
+  @include flex (space-around, flex-start);
   flex-direction: column;
-  align-items: flex-start;
   flex: 0 0 47%;
   padding-left: 3%;
-  justify-content: space-around;
   gap: 3%;
 
   h1 {

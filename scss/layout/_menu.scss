@@ -181,13 +181,11 @@
     grid-column: span 2;
   }
   
-  .menu-item {
-    align-items: center;
-    gap: 10px;
-    padding: 2%;
-    display: flex;
+  .menu-item  {
+    @include flex (space-between, center);
     flex-direction: row-reverse;
-    justify-content: space-between;
+    gap: 10px;
+    padding: 2%; 
     border-right:solid 2px #888;
 
     div {
