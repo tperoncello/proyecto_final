@@ -1,100 +1,94 @@
-.index-main section{
-    display: flex;
-  }
-  .index-section {
-    background-color: #f2f2f2;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding: 2% 0;
-  }
-  
-  
-  .index-section-foto {
-    display: flex;
+.index-main section {
+  display: flex;
+}
+
+.index-section {
+  background-color: $color-terciario;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 2% 0;
+}
+
+.index-section-foto {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  } 
   
-  .index-section-foto h1 {
+  h1 {
     font-size: 0px;
     font-weight: bold;
     color: #191817;
     padding: 1%;
     text-align: center;
-    
   }
   
-  .index-section-foto-img{
+  .index-section-foto-img {
     height: 90%;
     width: 90%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 20px;
   }
-  
-  
-  .index-section-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 0 0 47%;
-    padding-left: 3%;
-    justify-content: space-around;
-    gap: 3%;
-  }
-  .index-section-contenido-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 0 0 47%;
-    padding-left: 3%;
-    justify-content: space-around;
-    gap: 3%;
-   width: 56%;
-  }
-  
-  .index-section-contenido h1 {
+}
+
+.index-section-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 47%;
+  padding-left: 3%;
+  justify-content: space-around;
+  gap: 3%;
+
+  h1 {
     font-size: 50px;
     font-weight: bold;
     color: #191817;
     padding: 1%;
   }
   
-  .index-section-contenido h2 {
+  h2 {
     font-size: 45px;
     font-weight: bold;
     color: #191817;
     padding: 1%;
   }
   
-  .index-section-contenido p {
+  p {
     font-size: 24px;
+    font-family: sans-serif;
     color: #191817;
     padding: 1%;
   }
   
-  .index-section-contenido a {
-    border: 2px solid #574F42;
+  a {
+    border: 2px solid $color-secundario;
     color: #191817;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2px 6px;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-      padding: 1%;
+    transition: 2s;
+
+    &:hover {
+      border: 2px solid $color-secundario;
+      background-color: $color-primario;
+      border-radius: 20px;
+      transition: border-radius 4s;
+    }
   }
-  
-  #img-fondo {
-      background-image: url(../assets/marco-gofres-vista-superior.jpg);
-      max-width: 100%;
-    height: 70%;
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    
-  }
+}
+
+#img-fondo {
+  background-image: url(../assets/marco-gofres-vista-superior.jpg);
+  max-width: 100%;
+  height: 70%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

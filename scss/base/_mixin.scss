@@ -1,0 +1,14 @@
+// mixins
+
+@mixin flex($justify, $aling) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aling;
+  }
+  
+  
+@mixin flex-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

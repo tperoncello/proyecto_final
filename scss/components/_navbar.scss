@@ -1,0 +1,204 @@
+// header{
+//     width: 100%;
+//       position: sticky;
+//       top: 0;
+//       z-index: 2;
+//   }
+//   nav {
+//     width: 100%;
+//       background-color: $color-primario;
+//       padding: 0% 0% 0% 1%;
+//       position: relative;
+//       z-index: 2;
+//     }
+  
+//     nav section{
+//       display: flex;
+//       align-items: center;
+//       justify-content:space-between;
+//     }
+//     nav section div {
+//       display: flex;
+//     }
+  
+//     nav section div .sorella-logo {
+//       width: 84px;
+//       height: 89px;
+//     }
+    
+//     .navclass-sorella {
+//       width: 30%;
+//       justify-content:left;
+//       align-items: center;
+//       gap: 5%;
+//     }
+  
+//     .navclas-menuright{
+//       width: 60%;
+//       justify-content: flex-end;
+//       align-items: end;
+//       gap: 10%;
+//       margin-right: -5%;
+//     }
+  
+//     nav section div.navclas-menuright {
+//     align-items: center;
+//     gap: 5%;
+//     }
+
+//     nav section div a {
+//         color: $color-secundario;
+//         text-decoration: none;
+//         background-color: $color-primario;
+//         font-family:  sans-serif;
+//         border: 2px solid $color-secundario; 
+//         border-radius: 10px;
+//         padding: 3px 7px;
+//         font-size: 24px;
+//         font-weight: bold;
+//         transition: all 0.8s; 
+//         transition: border-radius 0.2s;
+//       }
+      
+//       nav section div a:hover {
+//         border: 2px solid transparent; 
+//         border-radius:0px;
+//         box-shadow: 0px 2px 0px 0px #000000a2;
+//       }
+      
+//   .espacio-boton{
+//     width: 0px;
+//   }
+  
+//   .boton-navbar {
+//     height: 0px;
+//     width: 0px;
+//   }
+  
+//   .boton-navbar-icono {
+//   font-size: 0px;
+//     color: #191817 transparent;
+//   }
+  
+//   .offcanvas-colordefondo {
+//     background-color: $color-primario;
+//   }
+  
+//   .offcanvas-letras {
+//     font-family: sans-serif;
+//     font-size: 20px;
+//   }
+  
+//   .offcanvas-letras-titulo {
+//     font-family: sans-serif;
+//     font-size: 24px;
+//   }
+    
+//   .img-mediana {
+//   height:400px ;
+//   width: 400px ;
+//   }
+//   .img-mediana2 {
+//       height: 400px;
+//       width: 600px;
+//   }
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: $color-primario;
+    padding: 0% 0% 0% 1%;
+    position: relative;
+    z-index: 2;
+    
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      div {
+        display: flex;
+        
+        .sorella-logo {
+          width: 84px;
+          height: 89px;
+        }
+      }
+      
+      .navclass-sorella {
+        width: 30%;
+        justify-content: left;
+        align-items: center;
+        gap: 5%;
+      }
+      
+      .navclas-menuright {
+        width: 60%;
+        justify-content: flex-end;
+        align-items: end;
+        gap: 10%;
+        margin-right: -5%;
+      }
+      
+      div.navclas-menuright {
+        align-items: center;
+        gap: 5%;
+      }
+      
+      a {
+        color: $color-secundario;
+        text-decoration: none;
+        background-color: $color-primario;
+        font-family: sans-serif;
+        border: 2px solid $color-secundario;
+        border-radius: 10px;
+        padding: 3px 7px;
+        font-size: 24px;
+        font-weight: bold;
+        transition: all 0.8s;
+        transition: border-radius 0.2s;
+        
+        &:hover {
+          border: 2px solid transparent;
+          border-radius: 0px;
+          box-shadow: 0px 2px 0px 0px #000000a2;
+        }
+      }
+    }
+  }
+  
+  .espacio-boton {
+    width: 0px;
+  }
+  
+  .boton-navbar {
+    height: 0px;
+    width: 0px;
+  }
+  
+  .boton-navbar-icono {
+    font-size: 0px;
+    color: #191817 transparent;
+  }
+  
+  .offcanvas-colordefondo {
+    background-color: $color-primario;
+  }
+  
+  .offcanvas-letras {
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  
+  .offcanvas-letras-titulo {
+    font-family: sans-serif;
+    font-size: 24px;
+  }
+  
+ 
+  

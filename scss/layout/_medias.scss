@@ -1,28 +1,424 @@
 // navbar
-
+@media(max-width: 900px) {
+    nav section div a {
+      color: #191817;
+      text-decoration: none;
+      font-family: sans-serif; 
+      border: 2px solid $color-secundario;
+      border-radius: 10px;
+      padding: 2px 6px;
+      font-size: 21px;
+      font-weight: bold;
+    }
+  
+    nav section div .sorella-logo {
+      width: 64px;
+      height: 69px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navclas-menuright {
+        display: none;
+    }
+   
+    .espacio-boton{
+      width: 49px;
+    }
+  
+    .boton-navbar {
+      height: 40px;
+      width: 40px;
+    }
+    
+    .boton-navbar-icono {
+    font-size: 40px;
+      color: #191817;
+    }
+  }
 // final de navbar
 
 // footer
 
+@media (max-width: 900px) {
+    footer div ul  li a {
+      color:$color-primario ;
+      font-size: 17px;
+      text-decoration: none;
+      text-align: justify;
+      padding: 2px 3px;
+  }
+  }
+  
+  @media (max-width: 767px) {
+    footer div ul  li a {
+      color: $color-primario;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: justify;
+      padding: 2px 3px;
+  }
+  }
+  
+  @media (max-width: 440px) {
+    footer {
+      background-color: $color-secundario;
+      color: $color-secundario;
+      padding: 6px 6px;
+      margin-bottom: 0%;
+      width: 100%;
+  }
+    footer div ul  li a {
+      color:$color-primario ;
+      font-size: 12px;
+      text-decoration: none;
+      text-align: justify;
+      padding: 2px 3px;
+  }
+  }
 // final de footer
 
 // index
-
+@media (max-width: 1400px) {
+    .index-section-foto-img{
+      height: 80%;
+      width: 90%;
+      
+    }
+  } 
+   
+  @media (max-width: 1100px) {
+  
+    .index-section-contenido h1 {
+      font-size: 40px;
+    }
+    
+    .index-section-contenido h2 {
+      font-size: 35px;
+    }
+    
+    .index-section-contenido p {
+      font-size: 20px;
+    }
+    
+    .index-section-contenido a {
+      font-size: 20px;
+    }
+  } 
+  @media (max-width: 900px) {
+    .index-section-contenido h1 {
+      font-size: 37px;
+    }
+    
+    .index-section-contenido h2 {
+      font-size: 30px;
+    }
+    
+    .index-section-contenido p {
+      font-size: 17px;
+    }
+    
+    .index-section-contenido a {
+      font-size: 20px;
+    }
+  
+    .index-section-contenido-2 h2 {
+      font-size: 30px;
+    }
+    
+    .index-section-contenido-2 p {
+      font-size: 17px;
+    }
+    
+    .index-section-contenido-2 a {
+      font-size: 20px;
+    }
+  } 
+  
+  @media (max-width: 800px) {
+    .index-section {
+      flex-direction: column-reverse;
+    }
+  
+    .index-section-contenido h1 {
+      font-size: 0px;
+    }
+  
+    .index-section-foto h1 {
+      font-size: 37px;
+      text-align: center;
+      
+    }
+  
+    .index-section-2 {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      
+    }
+  }
+  
+  @media (max-width: 600px) {
+  .index-section-contenido-2 h2 {
+    font-size: 24px;
+  
+  }
+  
+  .index-section-contenido-2 p {
+    font-size: 14px;
+   
+  }
+  
+  .index-section-contenido-2 a {
+    font-size: 20px;
+  }
+  } 
 // final de index
+
+// nosotros
+@media (max-width: 766px) {
+    .mapa-iframe h2 {
+    font-size: 37px; 
+  }
+  
+    .mapa-iframe iframe{
+    height: 200px;
+  } 
+  
+  .mapa-texto h1 {
+    font-size: 0px;
+  }
+  
+  .mapa-texto p {
+    font-size: 17px;
+  }
+  
+  .mapa{
+    display: flex;
+    width: 100%;
+    padding:3% 0% ;
+    flex-direction: column-reverse;
+  }
+  
+  
+  .producto {
+    flex-direction: column-reverse;
+  }
+  .producto-divimg{
+    width: 100%;
+  }
+  .producto-divtext{
+    width: 100%;
+  }
+  .producto-divtext-titulo{
+    font-size: 0px;
+  }
+  .producto-divtext-parrafo{
+    width: 100%;
+    font-size: 17px;
+  }
+  .producto-divimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .producto-divimg-imagen{
+    width: 80%;
+    height: auto;
+  }
+  .producto-divtext-imagen-titulo{
+    font-size: 37px;
+  }
+  
+  .pago-titulo{
+    font-size: 37px;
+  }
+  .pago-parrafo{
+    font-size: 17px;
+  }
+  
+  .historia {
+    flex-direction:column-reverse;
+  }
+  
+  .historia-divimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .historia-divtext{
+    width: 100%;
+  }
+  
+  .historia-divtext-titulo{
+    font-size: 0px;
+  }
+  .historia-divtext-parrafo{
+    font-size: 17px;
+  }
+  .historia-divimg-titulo {
+    font-size: 37px;
+  }
+  }
+// final de nosotros
+
+// menu
+@media(max-width:900px) {
+    .menu-card {
+      background-color: #e6e6e6;
+      /* width: 100%; */
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      /* grid-template-columns: repeat(1, 1fr); */
+      flex-direction: column;
+    }
+   .menu-category{
+    color: $color-primario;
+    text-shadow: 2px 2px 1px #000000a0;
+    border: solid 2px #000000;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    grid-column: span 1;
+    } 
+  
+    .menu-lista .section-menu .menu-container .menu-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media(max-width:600px) {
+    .menu-card {
+      background-color: #e6e6e6;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction:column;
+    }
+  
+    .menu-item-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+    
+    .menu-item-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .menu-item-price {
+      font-size: 16px;
+    }
+  }
+
+  
+// final de menu
 
 // contacto
 
 // final de contacto
 
+
 // galeria 
 
-// final de galeria 
+@media (max-width: 1200px) {
+    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+      transform: translateY(30%);
+    }
+  }
+  
+  @media (max-width: 970px) {
+    .tarjetamovil-contenido h2 {
+      font-size: 23px;
+    }
+  
+    .tarjetamovil-contenido p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-unico {
+      gap: 0.5%;
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-areas:
+        "tarjetamovil-1 tarjetamovil-1 tarjetamovil-1"
+        "tarjetamovil-2 tarjetamovil-2 tarjetamovil-2"
+        "tarjetamovil-3 tarjetamovil-3 tarjetamovil-3"
+        "tarjetamovil-4 tarjetamovil-4 tarjetamovil-4"
+        "tarjetamovil-5 tarjetamovil-5 tarjetamovil-5"
+        "tarjetamovil-6 tarjetamovil-6 tarjetamovil-6"
+        "tarjetamovil-7 tarjetamovil-7 tarjetamovil-7"
+        "tarjetamovil-8 tarjetamovil-8 tarjetamovil-8"
+        "tarjetamovil-9 tarjetamovil-9 tarjetamovil-9";
+      width: 100%;
+      padding: 3%;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .galeria-galeria {
+      height: 200px;
+    }
+  
+    .galeria-galeria div img {
+      height: 200px;
+    }
+  
+    [class^=tarjetamovil]:not(.tarjetamovil) {
+      height: 500px;
+    }
+  
+    [class^=tarjetamovil]:not(.tarjetamovil) img {
+      height: 500px;
+    }
+  
+    .grid-unico {
+      padding-bottom: 29%;
+    }
+  
+    .tarjetamovil-contenido h2 {
+      font-size: 30px;
+    }
+  
+    .tarjetamovil-contenido p {
+      font-size: 17px;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .tarjetamovil-contenido h2 {
+      font-size: 25px;
+    }
+  
+    .tarjetamovil-contenido p {
+      font-size: 15px;
+    }
 
-// menu
-
-// final de menu
-
-// nosotros
-
-// final de nosotros
-
+    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+        transform: translateY(35%);
+      }
+  }
+  
+  @media (max-width: 310px) {
+    .tarjetamovil-contenido h2 {
+      font-size: 23px;
+    }
+  
+    .tarjetamovil-contenido p {
+      font-size: 12px;
+    }
+  
+    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+      transform: translateY(20%);
+    }
+  }
+          // final de galeria
