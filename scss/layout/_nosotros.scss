@@ -5,7 +5,7 @@
     padding: 3% 0%;
   
     &-texto {
-      @include flex-centrado;
+      @extend .flex-centrado;
       flex-direction: column;
       gap: 3%;
       width: 100%;
@@ -25,7 +25,7 @@
     }
   
     &-iframe {
-      @include flex-centrado;
+      @extend .flex-centrado;
       width: 100%;
       flex-direction: column;
   
@@ -62,7 +62,7 @@
     padding: 3% 0%;
   
     &-divtext {
-      @include flex-centrado;
+      @extend .flex-centrado;
       padding: 0% 0% 0% 3%;
       flex-direction: column;
       height: 50%;
@@ -84,7 +84,7 @@
     }
   
     &-divimg {
-      @include flex-centrado;
+      @extend .flex-centrado;
       width: 80%;
       height: 45%;
   
@@ -106,7 +106,7 @@
   }
   
   .pago {
-    @include flex-centrado;
+    @extend .flex-centrado;
     flex-direction: column;
     padding-bottom: 4%;
   
@@ -128,12 +128,12 @@
   }
   
   .historia {
-    @include flex-centrado;
+      @extend .flex-centrado;
     flex-direction: row-reverse;
     padding: 0 3% 3% 0;
   
     &-divtext {
-      @include flex-centrado;
+      @extend .flex-centrado;
       width: 55%;
       flex-direction: column;
   
@@ -152,7 +152,7 @@
     }
   
     &-divimg {
-      @include flex-centrado;
+      @extend .flex-centrado;
       width: 50%;
   
       &-titulo {

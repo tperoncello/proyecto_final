@@ -13,7 +13,7 @@
 }
 
 .index-section-foto {
-  @include flex-centrado;
+  @extend .flex-centrado;
   flex-direction: column;
   
   h1 {

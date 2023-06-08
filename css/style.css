@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@400;700&family=Roboto:ital,wght@1,100&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.flex-centrado, .historia-divimg, .historia-divtext, .historia, .pago, .producto-divimg, .producto-divtext, .mapa-iframe, .mapa-texto, .index-section-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -175,9 +181,6 @@ footer div ul li a:hover {
 }
 
 .index-section-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .index-section-foto h1 {
@@ -254,9 +257,6 @@ footer div ul li a:hover {
   padding: 3% 0%;
 }
 .mapa-texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 3%;
   width: 100%;
@@ -273,9 +273,6 @@ footer div ul li a:hover {
   padding: 0% 3%;
 }
 .mapa-iframe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   flex-direction: column;
 }
@@ -310,9 +307,6 @@ footer div ul li a:hover {
   padding: 3% 0%;
 }
 .producto-divtext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0% 0% 0% 3%;
   flex-direction: column;
   height: 50%;
@@ -331,9 +325,6 @@ footer div ul li a:hover {
   text-align: center;
 }
 .producto-divimg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80%;
   height: 45%;
 }
@@ -352,9 +343,6 @@ footer div ul li a:hover {
 }
 
 .pago {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding-bottom: 4%;
 }
@@ -374,16 +362,10 @@ footer div ul li a:hover {
 }
 
 .historia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row-reverse;
   padding: 0 3% 3% 0;
 }
 .historia-divtext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 55%;
   flex-direction: column;
 }
@@ -399,9 +381,6 @@ footer div ul li a:hover {
   text-align: center;
 }
 .historia-divimg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
 }
 .historia-divimg-titulo {

@@ -6,7 +6,9 @@
     align-items: $aling;
   }
   
-@mixin flex-centrado{
+// @extend
+
+.flex-centrado{
     display: flex;
     justify-content: center;
     align-items: center;
