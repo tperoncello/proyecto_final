@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@400;700&family=Roboto:ital,wght@1,100&display=swap");
@@ -60,10 +61,10 @@ nav section .navclas-menuright {
 }
 nav section div.navclas-menuright {
   align-items: center;
-  gap: 5%;
+  gap: 2%;
 }
 nav section a {
-  color: #574F42;
+  color: #191817;
   text-decoration: none;
   background-color: #fcb0b1;
   font-family: sans-serif;
@@ -177,7 +178,11 @@ footer div ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 2% 0;
+  padding: 1% 0px 2% 0%;
+}
+
+.mobile {
+  display: none;
 }
 
 .index-section-foto {
@@ -355,7 +360,7 @@ footer div ul li a:hover {
 }
 .pago-parrafo {
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   color: #191817;
   text-align: center;
   padding: 0 4%;
@@ -492,38 +497,86 @@ footer div ul li a:hover {
   width: 40%;
 }
 
+.section-grande {
+  padding: 1% 2% 1% 2%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.582)), url(../../assets/contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section-contacto h1,
 .section-contacto h2 {
   background-color: #f2f2f2;
   margin: 0;
   padding: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 form {
   background-color: #fcfcfc;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
-  margin: 0;
+  margin: 2% 0%;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
-form label {
+
+label {
   display: flex;
   margin: 0;
   font-weight: bold;
+  color: rgba(5, 6, 15, 0.6);
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
 }
-form input[type=text],
-form input[type=email],
-form textarea {
+
+label.phone-label {
+  color: rgba(5, 6, 15, 0.6);
+}
+
+label:hover,
+label:focus,
+.input-group:hover label {
+  color: rgba(5, 6, 15, 0.7607843137);
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
   width: 100%;
   padding: 7px;
-  margin: 0;
+  margin: 4px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  height: 100%; /* Modificación */
+  max-width: 100%;
+  max-height: 60px;
+  background-color: rgba(5, 6, 15, 0.0392156863);
+  font-size: 1rem;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s, color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s, background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
 }
-form input[type=submit] {
+
+input[type=text]:hover,
+input[type=text]:focus,
+.input-group:hover input[type=text],
+input[type=email]:hover,
+input[type=email]:focus,
+.input-group:hover input[type=email],
+input[type=number]:hover,
+input[type=number]:focus,
+.input-group:hover input[type=number],
+textarea:hover,
+textarea:focus,
+.input-group:hover textarea {
+  outline: none;
+  border-color: #05060f;
+}
+
+input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -532,8 +585,15 @@ form input[type=submit] {
   cursor: pointer;
   font-size: 16px;
 }
-form input[type=submit]:hover {
+
+input[type=submit]:hover {
   background-color: #000000;
+}
+
+.section-contacto-envios {
+  background-color: #f2f2f2;
+  margin: 0%;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #envios form {
@@ -546,15 +606,17 @@ form input[type=submit]:hover {
   display: flex;
   flex-direction: column;
 }
-#envios form label {
+
+#envios label {
   display: flex;
   margin: 0;
   font-weight: bold;
   color: #000;
 }
-#envios form input[type=text],
-#envios form input[type=email],
-#envios form textarea {
+
+#envios input[type=text],
+#envios input[type=email],
+#envios textarea {
   width: 100%;
   padding: 10px;
   margin: 0;
@@ -562,7 +624,8 @@ form input[type=submit]:hover {
   border-radius: 5px;
   font-size: 16px;
 }
-#envios form input[type=submit] {
+
+#envios input[type=submit] {
   background-color: #000;
   color: #fff;
   padding: 12px 20px;
@@ -571,19 +634,18 @@ form input[type=submit]:hover {
   cursor: pointer;
   font-size: 16px;
 }
-#envios form input[type=submit]:hover {
-  background-color: #444;
-}
 
 .btn {
   background-color: #fcb0b1;
   border-color: #212529;
   transition: 0.5s;
 }
+
 .btn:hover {
   background-color: #574F42;
   border-color: #212529;
 }
+
 .btn.my-button:active {
   color: white;
   background-color: #574F42;
@@ -870,6 +932,12 @@ form input[type=submit]:hover {
   }
 }
 @media (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .dekstop {
+    display: none;
+  }
   .index-section-contenido-2 h2 {
     font-size: 24px;
   }
@@ -958,12 +1026,10 @@ form input[type=submit]:hover {
 @media (max-width: 900px) {
   .menu-card {
     background-color: #e6e6e6;
-    /* width: 100%; */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
-    /* grid-template-columns: repeat(1, 1fr); */
     flex-direction: column;
   }
   .menu-category {
@@ -1013,8 +1079,13 @@ form input[type=submit]:hover {
   }
 }
 @media (max-width: 1200px) {
-  [class^=tarjetamovil]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil):hover .tarjetamovil-contenido {
     transform: translateY(30%);
+  }
+}
+@media (max-width: 1090px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+    transform: translateY(25%);
   }
 }
 @media (max-width: 970px) {
@@ -1106,6 +1177,30 @@ form input[type=submit]:hover {
   }
   [class^=tarjetamovil]:not(.tarjetamovil):hover .tarjetamovil-contenido {
     transform: translateY(20%);
+  }
+}
+@media (max-width: 400px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) {
+    height: 400px;
+  }
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) img {
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) {
+    height: 350px;
+  }
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) img {
+    height: 100%;
+  }
+}
+@media (max-width: 270px) {
+  .tarjetamovil-contenido h2 {
+    font-size: 21px;
+  }
+  .tarjetamovil-contenido p {
+    font-size: 11px;
   }
 }
 

@@ -155,10 +155,24 @@
       display: flex;
       flex-direction: row;
       
+      // img{
+        
+      // }
     }
+
   }
   
   @media (max-width: 600px) {
+
+    .mobile {
+      display: block;
+    }
+
+    .dekstop {
+      display: none;
+    }
+
+
   .index-section-contenido-2 h2 {
     font-size: 24px;
   
@@ -268,12 +282,10 @@
 @media(max-width:900px) {
     .menu-card {
       background-color: #e6e6e6;
-      /* width: 100%; */
       border-radius: 5px;
       padding: 20px;
       margin-bottom: 20px;
       display: flex;
-      /* grid-template-columns: repeat(1, 1fr); */
       flex-direction: column;
     }
    .menu-category{
@@ -343,10 +355,16 @@
 // galeria 
 
 @media (max-width: 1200px) {
-    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+    .grid-unico [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
       transform: translateY(30%);
     }
   }
+
+   @media (max-width: 1090px) {
+     .grid-unico [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+       transform: translateY(25%);
+     }
+   }
   
   @media (max-width: 970px) {
     .tarjetamovil-contenido h2 {
@@ -442,34 +460,66 @@
   }
 }
 
-  @media (max-width: 350px) {
-    .tarjetamovil-contenido h2 {
-      font-size: 25px;
-    }
-  
-    .tarjetamovil-contenido p {
-      font-size: 15px;
-    }
-
-    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
-        transform: translateY(35%);
-      }
+@media (max-width: 350px) {
+  .tarjetamovil-contenido h2 {
+    font-size: 25px;
   }
 
-
-  
-  @media (max-width: 310px) {
-    .tarjetamovil-contenido h2 {
-      font-size: 23px;
-    }
-  
-    .tarjetamovil-contenido p {
-      font-size: 12px;
-    }
-  
-    [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
-      transform: translateY(20%);
-    }
-
+  .tarjetamovil-contenido p {
+    font-size: 15px;
   }
-          // final de galeria
+
+  [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+      transform: translateY(35%);
+    }
+}
+
+
+
+@media (max-width: 310px) {
+  .tarjetamovil-contenido h2 {
+    font-size: 23px;
+  }
+
+  .tarjetamovil-contenido p {
+    font-size: 12px;
+  }
+
+  [class^="tarjetamovil"]:not(.tarjetamovil):hover .tarjetamovil-contenido {
+    transform: translateY(20%);
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil){
+      height: 400px;
+    }
+
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) img {
+      height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil){
+      height: 350px;
+    }
+
+  .grid-unico [class^=tarjetamovil]:not(.tarjetamovil) img {
+      height: 100%;
+    }
+
+
+}
+
+@media (max-width: 270px) {
+  .tarjetamovil-contenido h2 {
+    font-size: 21px;
+  }
+
+  .tarjetamovil-contenido p {
+    font-size: 11px;
+  }
+}
+
+// final de galeria

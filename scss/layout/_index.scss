@@ -9,7 +9,11 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 2% 0;
+  padding: 1% 0px 2% 0%;
+}
+
+.mobile{
+  display: none;
 }
 
 .index-section-foto {
